@@ -1,0 +1,20 @@
+
+/* Theme pour le message d'erreur */
+md-toast.md-error-toast-theme, md-toast.md-error-toast-theme .md-toast-content {
+      background-color: red;
+}
+
+
+.tel-numbers > .md-fab {background-color: #78909C;}
+.tel-numbers > .md-fab:focus {background-color: #546E7A;}
+.tel-numbers > .md-fab:hover:not([disabled]) {background-color: #37474F;}
+
+.tel-navs > .md-fab {background-color: #1E88B5;}
+.tel-navs > .md-fab:focus {background-color: #197692;}
+.tel-navs > .md-fab:hover:not([disabled]) {background-color: #1565A0;}
+
+
+.md-button.md-fab > i {
+	vertical-align:middle;
+}
+
