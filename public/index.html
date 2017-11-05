@@ -8,64 +8,65 @@
 
 </head>
 <body ng-app="BlankApp" ng-controller="RemoteController as rc">	 
-	<section layout="row" layout-sm="column" layout-align="center center" layout-wrap>			
-		<section layout="column" layout-sm="column" layout-align="center center" layout-wrap>
-			<section layout="row" layout-sm="column" layout-align="center center" class="tel-numbers"  layout-wrap>  
+	<section layout="row"  layout-align="center center" layout-wrap>			
+		<section layout="column"  layout-align="center center" layout-wrap>
+			<section layout="row"  layout-align="center center" class="tel-numbers"  layout-wrap>  
 	        	<md-button class="md-fab" ng-click='rc.clickOnRemote("power")'><i class="material-icons">power_settings_new</i></md-button>			     
-			</section>		
-			<section layout="row" layout-sm="column" layout-align="center center" class="tel-numbers" layout-wrap>
-					<md-button class="md-fab" ng-click='rc.clickOnRemote("7")'><i>7</i></md-button>
-					<md-button class="md-fab" ng-click='rc.clickOnRemote("8")'><i>8</i></md-button>
-					<md-button class="md-fab" ng-click='rc.clickOnRemote("9")'><i>9</i></md-button>
 			</section>
-			<section layout="row" layout-sm="column" layout-align="center center" class="tel-numbers" layout-wrap>
+			<section layout="row"  layout-align="center center" class="tel-numbers" layout-wrap>
+					<md-button class="md-fab" ng-click='rc.clickOnRemote("1")'><i>1</i></md-button>
+					<md-button class="md-fab" ng-click='rc.clickOnRemote("2")'><i>2</i></md-button>
+					<md-button class="md-fab" ng-click='rc.clickOnRemote("3")'><i>3</i></md-button>
+			</section>					
+			<section layout="row"  layout-align="center center" class="tel-numbers" layout-wrap>
 					<md-button class="md-fab" ng-click='rc.clickOnRemote("4")'><i>4</i></md-button>
 					<md-button class="md-fab" ng-click='rc.clickOnRemote("5")'><i>5</i></md-button>
 					<md-button class="md-fab" ng-click='rc.clickOnRemote("6")'><i>6</i></md-button>
 			</section>		
-			<section layout="row" layout-sm="column" layout-align="center center" class="tel-numbers" layout-wrap>
-					<md-button class="md-fab" ng-click='rc.clickOnRemote("1")'><i>1</i></md-button>
-					<md-button class="md-fab" ng-click='rc.clickOnRemote("2")'><i>2</i></md-button>
-					<md-button class="md-fab" ng-click='rc.clickOnRemote("3")'><i>3</i></md-button>
+			<section layout="row"  layout-align="center center" class="tel-numbers" layout-wrap>
+					<md-button class="md-fab" ng-click='rc.clickOnRemote("7")'><i>7</i></md-button>
+					<md-button class="md-fab" ng-click='rc.clickOnRemote("8")'><i>8</i></md-button>
+					<md-button class="md-fab" ng-click='rc.clickOnRemote("9")'><i>9</i></md-button>
 			</section>		
-			<section layout="row" layout-sm="column" layout-align="center center" class="tel-numbers" layout-wrap>		
+			<section layout="row"  layout-align="center center" class="tel-numbers" layout-wrap>		
 					<md-button class="md-fab" ng-click='rc.clickOnRemote("0")'><i>0</i></md-button>			
-			</section>	
-			<section layout="row" layout-sm="column" layout-align="center center" class="tel-numbers"  layout-wrap>
-					<md-button class="md-fab" ng-click='rc.clickOnRemote("bwd")'><i class="material-icons">fast_rewind</i></md-button>
-					<md-button class="md-fab" ng-click='rc.clickOnRemote("play")'><i class="material-icons">play_arrow</i></md-button>
-					<md-button class="md-fab" ng-click='rc.clickOnRemote("fwd")'><i class="material-icons">fast_forward</i></md-button>
-			</section>
-			<section layout="row" layout-sm="column" layout-align="center center" class="tel-navs" layout-wrap>
-			<md-button class="md-fab" ng-click='rc.clickOnRemote("red")' style='background-color:red' ><i class="material-icons">undo</i></md-button>
+			</section>				
+			<section layout="row"  layout-align="center center" class="tel-navs" layout-wrap  style='margin-top:10px;'>
+			<md-button class="md-fab" ng-click='rc.clickOnRemote("red")' style='background-color:#D84315' ><i class="material-icons">undo</i></md-button>
 			<md-button class="md-fab" ng-click='rc.clickOnRemote("up")'><i class="material-icons">arrow_upward</i></md-button>
-			<md-button class="md-fab" ng-click='rc.clickOnRemote("blue")' style='background-color:blue'><i class="material-icons">search</i></md-button>
+			<md-button class="md-fab" ng-click='rc.clickOnRemote("blue")' style='background-color:#01579B;'><i class="material-icons">search</i></md-button>
 		</section>
-		<section layout="row" layout-sm="column" layout-align="center center" class="tel-navs" layout-wrap>
+		<section layout="row"  layout-align="center center" class="tel-navs" layout-wrap>
 			<md-button class="md-fab" ng-click='rc.clickOnRemote("left")'><i class="material-icons">arrow_back</i></md-button>
-			<md-button class="md-fab" ng-click='rc.clickOnRemote("ok")'><i class="material-icons">check</i></md-button>			
+			<md-button class="md-fab" ng-click='rc.clickOnRemote("ok")'>OK</md-button>			
 			<md-button class="md-fab" ng-click='rc.clickOnRemote("right")'><i class="material-icons">arrow_forward</i></md-button>
 		</section>
-		<section layout="row" layout-sm="column" layout-align="center center" class="tel-navs" layout-wrap>					
-			<md-button class="md-fab" ng-click='rc.clickOnRemote("green")' style='background-color:green' >M</md-button>
+		<section layout="row"  layout-align="center center" class="tel-navs" layout-wrap>					
+			<md-button class="md-fab" ng-click='rc.clickOnRemote("green")' style='background-color:#4CAF50' >M</md-button>
 			<md-button class="md-fab" ng-click='rc.clickOnRemote("down")'><i class="material-icons">arrow_downward</i></md-button>
-			<md-button class="md-fab" ng-click='rc.clickOnRemote("yellow")' style='background-color:yellow' >I</md-button>					
+			<md-button class="md-fab" ng-click='rc.clickOnRemote("yellow")' style='background-color:#FFEB3B;' >I</md-button>					
 		</section>
-		<section layout="row" layout-sm="column" layout-align="center center" class="tel-numbers"  layout-wrap>
+		<section layout="row"  layout-align="center center" class="tel-numbers"  layout-wrap style='margin-top:10px;'>
 			<md-button class="md-fab" ng-click='rc.clickOnRemote("swap")'><i>swap</i></md-button>
-			<md-button class="md-fab" ng-click='rc.clickOnRemote("home")'><i class="material-icons">home</i></md-button>
+			<md-button class="md-fab tel-home" ng-click='rc.clickOnRemote("home")' ></md-button>
 			<md-button class="md-fab" ng-click='rc.clickOnRemote("info")'><i>info</i></md-button>
 		</section>
-		</section>		
-		<section layout="column" layout-sm="column" layout-align="center center" class="tel-numbers"  layout-wrap>
-			<md-button class="md-fab" aria-label="Power" ng-click='rc.clickOnRemote("vol_inc")'><i class="material-icons">volume_up</i></md-button>
-			<md-button class="md-fab" aria-label="Power" ng-click='rc.clickOnRemote("vol_dec")'><i class="material-icons">volume_down</i></md-button>
-				
+		<section layout="row"  layout-align="center center" class="tel-numbers"  layout-wrap style='margin-top:10px;'>
+			<md-button class="md-fab" ng-click='rc.clickOnRemote("bwd")'><i class="material-icons">fast_rewind</i></md-button>
+			<md-button class="md-fab" ng-click='rc.clickOnRemote("play")'><i class="material-icons">play_arrow</i></md-button>
+			<md-button class="md-fab" ng-click='rc.clickOnRemote("rec")'><i class="material-icons" style='color:#D84315;	'>fiber_manual_record</i></md-button>
+			<md-button class="md-fab" ng-click='rc.clickOnRemote("fwd")'><i class="material-icons">fast_forward</i></md-button>
+		</section>	
+		</section>
+		<section layout="column"  layout-align="center center" class="tel-numbers"  layout-wrap>
+			<md-button class="md-fab" ng-click='rc.clickOnRemote("vol_inc")'><i class="material-icons">volume_up</i></md-button>
+			<md-button class="md-fab" ng-click='rc.clickOnRemote("vol_dec")'><i class="material-icons">volume_down</i></md-button>
+							
 			<md-button class="md-fab" ng-click='rc.clickOnRemote("prgm_inc")'><i>P+</i></md-button>
 			<md-button class="md-fab" ng-click='rc.clickOnRemote("prgm_dec")'><i>P-</i></md-button>
 		</section>
 	</section>			
-	<section layout="column" layout-sm="column" layout-align="center center" layout-wrap>
+	<section layout="column" layout-align="center center" layout-wrap>
 		
 	</section>
 

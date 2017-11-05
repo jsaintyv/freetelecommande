@@ -13,6 +13,8 @@ md-toast.md-error-toast-theme, md-toast.md-error-toast-theme .md-toast-content {
 .tel-navs > .md-fab:focus {background-color: #197692;}
 .tel-navs > .md-fab:hover:not([disabled]) {background-color: #1565A0;}
 
+button.tel-home {background-image: url('../img/free.png');background-size: 56px 56px;background-repeat: no-repeat;}
+
 
 .md-button.md-fab > i {
 	vertical-align:middle;

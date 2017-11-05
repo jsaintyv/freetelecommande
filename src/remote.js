@@ -11,6 +11,7 @@ module.exports = function () {
 		return rp('http://hd1.freebox.fr/pub/remote_control?code=' + config.remotepasswd + '&key=' + key)
 	}
 	
+	/* @see http://tutoriels.domotique-store.fr/content/51/90/fr/api-de-la-freebox-tv-_-player-v5-_-v6-via-requ%C3%AAtes-http.html */
 	return {		
 		power: function() {return remoteControl('power');},
 		up: function() {return remoteControl('up');},
