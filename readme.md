@@ -17,43 +17,23 @@ Vous pouvez lancer l'application via:
 npm start
 ```
 
-
-
-# Dockeriser l'application
-Dans le répertoire extrait de git.
-```
-docker build -t jsaintyv/freetelecommmande
-```
-
-Pour lancer
-```
-docker run -p 3000:3000 -t freetelecommande
-```
-
-Pour voir si elle fonctionne
-```
-docker ps
-```
-
-# Pour lancer l'application au démarrage sous Linux avec systemd
-```
-docker run -d --name=freetelecommande -p 3000:3000 jsaintyv/freetelecommmande
-```
-
+# Installer en service via systemd
 Editez un nouveau fichier /etc/systemd/system/freetelecommande.service
 ```
 [Unit]
 Description=Freetelecommande
-Requires=docker.service
-After=docker.service
 
 [Service]
+Environment=NODE_PORT=3000
 Restart=always
-ExecStart=/usr/bin/docker start -a freetelecommande
-ExecStop=/usr/bin/docker stop -t 2 freetelecommande
+Type=simple
+User=pi
+ExecStart=/usr/bin/node /home/pi/freetelecommande/telecommande-server.js
+Restart=on-failure
 
 [Install]
 WantedBy=default.target
+
 ```
 
 Enregistrer le service
