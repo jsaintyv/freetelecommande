@@ -28,7 +28,8 @@ Environment=NODE_PORT=3000
 Restart=always
 Type=simple
 User=pi
-ExecStart=/usr/bin/node /home/pi/freetelecommande/telecommande-server.js
+WorkingDirectory=/home/pi/freetelecommande
+ExecStart=/usr/bin/npm start
 Restart=on-failure
 
 [Install]
