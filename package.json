@@ -8,7 +8,7 @@
   	"url" : "https://github.com/jsaintyv/freetelecommande.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node telecommande-server.js"
   },
   "author": "Jérôme SAINT-YVES",
   "license": "GPL",
